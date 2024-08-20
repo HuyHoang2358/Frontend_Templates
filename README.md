@@ -37,3 +37,9 @@ Dưới đây là các template dành cho frontend để tiện sử dụng
 - Hỗ trợ: html thuần, vue
 
   ![Trang chủ Xray admin](./images/xray-admin-template.png)
+  
+### 7. Skote admin template
+- CSS: Bootstrap Css
+- Hỗ trợ: html thuần, laravel layout
+
+  ![Trang chủ Xray admin](./images/skote-admin-template.png)
