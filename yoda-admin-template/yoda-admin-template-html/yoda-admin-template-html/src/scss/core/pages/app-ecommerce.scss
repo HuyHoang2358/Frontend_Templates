@@ -1,0 +1,120 @@
+@import '../../include/index.scss';
+
+/* App Ecommerce */
+.#{$class-prefix}-ecommerce-app {
+
+    /* Shop Sidebar */
+    &-sidebar {
+        &-mobile {
+            display: none;
+
+            &-btn {
+                display: none;
+            }
+        }
+
+        @include breakpoint(md) {
+            display: none;
+
+            &-mobile {
+                width: 255px;
+                display: flex;
+
+                .#{$class-prefix}-ecommerce-app-sidebar {
+                    display: block;
+                }
+
+                &-btn {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    /* Shop Header */
+    &-header {
+        .nav {
+            .btn.active {
+                svg>path {
+                    fill: $primary-1;
+                }
+            }
+        }
+
+        @include breakpoint(sm) {
+            &-search {
+                flex: 0 0 100% !important;
+            }
+
+            &-select {
+                flex: 1 0 0 !important;
+            }
+        }
+    }
+
+    /* Shop Content */
+    &-content {
+        .#{$class-prefix}-eCommerceCardOne {
+            img {
+                max-height: auto;
+            }
+        }
+    }
+
+    /* Detail */
+    &-detail {
+        &-slider {
+            img {
+                max-height: 600px;
+                padding: 10px;
+            }
+
+            &-2 {
+                width: 80%;
+                margin: 0 auto;
+
+                .#{$class-prefix}-slide-item {
+                    >div {
+                        width: 75px;
+                        height: 75px;
+                    }
+                }
+
+                .swiper-slide-active {
+                    .#{$class-prefix}-slide-item {
+                        >div {
+                            border-color: $b-80 !important;
+                        }
+                    }
+                }
+
+                @include breakpoint(sm) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    /* Checkout */
+    &-checkout {
+        &-item-img {
+            @include breakpoint(sm) {
+                flex: 0 0 100% !important;
+            }
+        }
+
+        &-item-text {
+            @include breakpoint(sm) {
+                flex: 0 0 100% !important;
+            }
+        }
+
+        &-title-table {
+            padding-left: 190px;
+
+            @include breakpoint(sm) {
+                display: none;
+            }
+        }
+    }
+}

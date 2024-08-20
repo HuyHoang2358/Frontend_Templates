@@ -1,0 +1,71 @@
+@import '../../include/index.scss';
+
+/* Pricing */
+.#{$class-prefix}-pricing-billed-text {
+    &.active {
+        color: $primary-1 !important;
+    }
+}
+
+.#{$class-prefix}-pricing-item {
+    flex: 0 0 19%;
+    max-width: 210px;
+
+    &-best-button {
+        width: 100%;
+        height: auto;
+        white-space: initial;
+        line-height: 1.2;
+    }
+
+    &-special {
+        background-color: $primary-1;
+        border-color: $primary-1 !important;
+
+        .#{$class-prefix}-pricing-item {
+
+            &-title,
+            &-price {
+                color: $primary-4;
+            }
+
+            &-subtitle {
+                color: $success-1 !important;
+            }
+
+            &-billed,
+            &-list {
+                color: $primary-3 !important;
+            }
+
+            &-list {
+                svg path {
+                    fill: $primary-4;
+                }
+            }
+        }
+
+        button.btn {
+            color: $primary-1 !important;
+            background-color: $primary-4 !important;
+            
+            &:hover{
+                color: $b-0 !important;
+            }
+        }
+    }
+
+    @include breakpoint(lg) {
+        flex: 0 0 40%;
+        max-width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-self: normal;
+    }
+
+    @include breakpoint(sm) {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}

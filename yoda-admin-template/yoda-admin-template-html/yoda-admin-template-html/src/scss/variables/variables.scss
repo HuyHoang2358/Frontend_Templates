@@ -1,0 +1,127 @@
+$font-family: "Poppins", sans-serif;
+
+// Sidebar
+$sidebar-width: 280px;
+$sidebar-mini-drawer-width: 64px;
+
+// BoxShadow
+$input-focus: 0px 0px 10px rgba(10, 175, 255, 0.35);
+$primary-shadow: 0px 0px 25px rgba(0, 16, 247, 0.7);
+
+$elevatior: 0px 10px 20px rgba(0, 0, 0, 0.08);
+$elevatior-2: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+// Border Radius
+$border-radius-xxl: 24px;
+$border-radius-xl: 15px;
+$border-radius-lg: 10px;
+$border-radius-base: 7px;
+$border-radius-sm: 4px;
+
+//----- Colors -------
+
+// Black & White
+$b-0: #ffffff;
+$b-10: #f7fafc;
+$b-20: #f0f3f5;
+$b-40: #dfe6e9;
+$b-60: #b2bec3;
+$b-80: #636e72;
+$b-100: #2d3436;
+$dark-bg: #111314;
+
+// Gradient
+$primary-gradient: linear-gradient(90deg, #0010f7 0%, #1be7ff 100%);
+$secondary-gradient: linear-gradient(90deg, #a210ba 0%, #ff00c7 100%);
+$danger-gradient: linear-gradient(90deg, #ff0022 0%, #ff5c00 100%);
+$success-gradient: linear-gradient(90deg, #00f7bf 0%, #98ffa2 100%);
+$warning-gradient: linear-gradient(90deg, #ffc212 0%, #faff00 100%);
+$info-gradient: linear-gradient(90deg, #1be7ff 0%, #c2f4ff 100%);
+$dark-gradient: linear-gradient(90deg, #111314 0%, #636e72 100%);
+
+// Primary
+$primary-1: #0010f7;
+$primary-2: #0063f7;
+$primary-3: #55b1f3;
+$primary-4: #ebfafa;
+
+// Secondary
+$secondary-1: #c903ff;
+$secondary-2: #e26bf5;
+$secondary-3: #f7c2ff;
+$secondary-4: #fdeffc;
+
+// Danger
+$danger-1: #ff0022;
+$danger-2: #ff455e;
+$danger-3: #ff8b9a;
+$danger-4: #ffe7ea;
+
+// Success
+$success-1: #00f7bf;
+$success-2: #5bffce;
+$success-3: #98ffe0;
+$success-4: #eafff8;
+
+// Warning
+$warning-1: #ffc212;
+$warning-2: #ffd252;
+$warning-3: #ffe393;
+$warning-4: #fff9e9;
+
+// Info
+$info-1: #1be7ff;
+$info-2: #59edff;
+$info-3: #97f4ff;
+$info-4: #eafcff;
+
+//----- Typography -------
+
+// Font Sizes
+$h1-font-size: 42px;
+$h2-font-size: 28px;
+$h3-font-size: 24px;
+$h4-font-size: 20px;
+$h5-font-size: 16px;
+$h6-font-size: 14px;
+$caption: 12px;
+$p1-body: 14px;
+$p2-body: 14px;
+$button: 14px;
+$placeholder: 14px;
+$input-description: 10px;
+$input-label: 14px;
+$badge-text: 12px;
+
+// Line-Heights
+$h1-line-height: 48px;
+$h2-line-height: 42px;
+$h3-line-height: 28px;
+$h4-line-height: 24px;
+$h5-line-height: 24px;
+$caption-line-height: 18px;
+$p1-body-line-height: 21px;
+$p2-body-line-height: 21px;
+$button-line-height: 16px;
+$placeholder-line-height: 16px;
+$input-description-line-height: 12px;
+$input-label-line-height: 16px;
+$badge-text-line-height: 12px;
+
+// Font Weights
+$font-weight-extraLight: 200;
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-extraBold: 800;
+
+// H-Tags Control
+$header-text-color: $b-100;
+$header-text-color-dark: $dark-0;
+$headings-font-weight: $font-weight-medium;
+
+// Body Font Control
+$text-color-dark: $b-80;
+$text-color-dark-mode: $dark-30;

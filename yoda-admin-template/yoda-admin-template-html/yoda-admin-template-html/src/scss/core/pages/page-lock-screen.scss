@@ -1,0 +1,33 @@
+@import '../../include/index.scss';
+
+/* Lock Screen */
+.#{$class-prefix}-lock-screen {
+    position: relative;
+    min-height: 100vh;
+    padding: 150px 30px;
+
+    .#{$class-prefix}-screen-bg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-size: cover;
+        background-position: center;
+    }
+
+    &-row {
+        max-width: 390px;
+        background: rgba(0, 16, 247, 0.3);
+        border: 3px solid rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(10px);
+
+        @include breakpoint(sm) {
+            max-width: 100%;
+        }
+    }
+
+    @include breakpoint(sm) {
+        padding: 64px 24px;
+    }
+}

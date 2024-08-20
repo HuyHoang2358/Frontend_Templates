@@ -1,0 +1,146 @@
+@import './include/index.scss';
+
+.#{$class-prefix}-dir-block {
+    display: none;
+}
+
+body.direction-end {
+    .#{$class-prefix}-dir-none {
+        display: none;
+    }
+
+    .#{$class-prefix}-dir-block {
+        display: block;
+
+        &.#{$class-prefix}-dark-block {
+            display: none;
+        }
+    }
+
+    // Scale X
+    .#{$class-prefix}-dir-scale-x-n1 {
+        transform: scale(-1, 1);
+    }
+
+    /* Theme Dark */
+    &.dark {
+        .#{$class-prefix}-dir-block {
+            &.#{$class-prefix}-dark-none {
+                display: none;
+            }
+
+            &.#{$class-prefix}-dark-block {
+                display: block;
+            }
+        }
+
+        .#{$class-prefix}-dir-none {
+            &.#{$class-prefix}-dark-block {
+                display: none;
+            }
+        }
+    }
+
+    /* Apex */
+    .apexcharts-legend-marker {
+        margin-right: 3px;
+        margin-left: 0;
+    }
+
+    /* Customise */
+    .#{$class-prefix}-theme-customizer {
+        &-button {
+            transform: translate(96%, 0%) scale(-1, 1);
+            
+            @include breakpoint(sm) {
+                transform: translate(186%, 0px) scale(-0.9, 0.9);
+            }
+        }
+    }
+
+    /* Dashboard Ecommerce */
+    .#{$class-prefix}-ecommerce-detail-card {
+        img {
+            transform: scale(-1, 1)
+        }
+    }
+
+    /* Authentication */
+    .#{$class-prefix}-authentication-page {
+        .#{$class-prefix}-other-links {
+            a+a {
+                padding-right: 16px;
+                margin-right: 16px;
+
+                &:last-child {
+                    margin-left: 0;
+                    padding-left: 0;
+                }
+
+                &:before {
+                    right: 0;
+                    left: auto;
+                }
+            }
+        }
+    }
+
+    /* Accordion */
+    .accordion-button::after {
+        transform: rotate(-180deg);
+    }
+
+    .accordion-button:not(.collapsed)::after {
+        transform: rotate(-90deg);
+    }
+
+    /* Popover */
+    .bs-popover-start>.popover-arrow,
+    .bs-popover-auto[data-popper-placement^=left]>.popover-arrow {
+        left: -0.5rem;
+        right: auto;
+    }
+
+    .bs-popover-end>.popover-arrow,
+    .bs-popover-auto[data-popper-placement^=right]>.popover-arrow {
+        right: -0.5rem;
+        left: auto;
+    }
+
+    /* Tooltip */
+    .bs-tooltip-end,
+    .bs-tooltip-auto[data-popper-placement^=right] {
+        .tooltip-inner {
+            box-shadow: 6px 3px 6px -4px rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+        }
+    }
+
+    .bs-tooltip-start,
+    .bs-tooltip-auto[data-popper-placement^=left] {
+        .tooltip-inner {
+            box-shadow: -6px 3px 6px -4px rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+        }
+    }
+
+    .bs-tooltip-end .tooltip-arrow,
+    .bs-tooltip-auto[data-popper-placement^=right] .tooltip-arrow {
+        right: 0;
+        left: auto;
+    }
+
+    .bs-tooltip-end .tooltip-arrow::before,
+    .bs-tooltip-auto[data-popper-placement^=right] .tooltip-arrow::before {
+        right: 2px;
+    }
+
+    .bs-tooltip-start .tooltip-arrow,
+    .bs-tooltip-auto[data-popper-placement^=left] .tooltip-arrow {
+        left: 0;
+        right: auto;
+    }
+
+    .bs-tooltip-start .tooltip-arrow::before,
+    .bs-tooltip-auto[data-popper-placement^=left] .tooltip-arrow::before {
+        left: 2px;
+    }
+}

@@ -1,0 +1,113 @@
+@import '../../include/index.scss';
+
+/* Radio */
+.form-check {
+    position: relative;
+
+    &-input,
+    &-label {
+        cursor: pointer;
+    }
+}
+
+.form-check-input {
+    &[type=radio]~label {
+        &:before {
+            content: "";
+            position: absolute;
+            top: 3px;
+            left: 0;
+            display: block;
+            width: 16px;
+            height: 16px;
+            background-color: $b-0;
+            border: 2px solid $b-60;
+            border-radius: 50%;
+            transition: all .3s;
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            top: 7px;
+            left: 4px;
+            display: block;
+            width: 8px;
+            height: 8px;
+            background-color: $primary-1;
+            border-top: 0;
+            border-left: 0;
+            border-radius: 8px;
+            transform: scale(0);
+            opacity: 0;
+            transition: all 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+        }
+    }
+
+    &:disabled {
+        cursor: no-drop;
+
+        &[type=radio]~label {
+            cursor: no-drop;
+
+            &:before {
+                background-color: $b-20;
+                border-color: $b-60;
+            }
+        }
+
+        &:checked[type=radio]~label {
+            &:before {
+                border-color: $b-60;
+            }
+
+            &:after {
+                background-color: $b-60;
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+    }
+
+    &:checked[type=radio]~label {
+        &:before {
+            border-color: $primary-1;
+        }
+
+        &:after {
+            transform: scale(1);
+            opacity: 1;
+            transition: all 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+        }
+    }
+}
+
+.btn-check {
+    +.btn {
+        background-color: $b-0;
+        border-color: $b-60;
+    }
+
+    &[disabled]+.btn,
+    &:disabled+.btn {
+        background-color: $b-20 !important;
+        color: $b-60 !important;
+        border-color: $b-60 !important;
+    }
+
+    &:checked+.btn {
+        background-color: $primary-4 !important;
+        color: $primary-1 !important;
+        border-color: $primary-1;
+    }
+
+    &:active+.btn {
+        background-color: $b-0;
+        color: $primary-1;
+        border-color: $primary-1;
+    }
+
+    &:focus+.btn {
+        background-color: $primary-4 !important;
+    }
+}

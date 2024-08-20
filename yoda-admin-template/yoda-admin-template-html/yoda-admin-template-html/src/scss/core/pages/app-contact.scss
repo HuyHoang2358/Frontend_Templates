@@ -1,0 +1,23 @@
+@import '../../include/index.scss';
+
+/* App Contact */
+.#{$class-prefix}-contact-card {
+    .table {
+        >thead>tr>th {
+            background: none;
+            font-size: $h5-font-size;
+            line-height: $h5-font-size;
+            font-weight: $font-weight-medium;
+
+            &:nth-child(2),
+            &:nth-child(6) {
+                min-width: 200px;
+            }
+        }
+
+        >thead>tr>th,
+        >tbody>tr>td {
+            padding: 16px 32px;
+        }
+    }
+}

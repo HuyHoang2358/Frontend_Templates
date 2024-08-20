@@ -1,0 +1,45 @@
+@import '../../include/index.scss';
+
+/* App Contact Detail */
+.#{$class-prefix}-contact-detail {
+    &-content-list {
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+    
+            li {
+                display: flex;
+                align-items: center;
+    
+                span {
+                    display: block;
+    
+                    &:nth-child(1) {
+                        min-width: 200px;
+                    }
+                }
+    
+                @include breakpoint(sm) {
+                    display: block;
+    
+                    span {
+                        &:nth-child(1) {
+                            min-width: initial;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    @include breakpoint(sm) {
+        &-sidebar {
+            flex: 0 0 100% !important;
+
+            .#{$class-prefix}-footer-img {
+                display: none;
+            }
+        }
+    }
+}

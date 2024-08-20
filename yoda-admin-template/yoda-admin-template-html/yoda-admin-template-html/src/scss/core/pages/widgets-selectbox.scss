@@ -1,0 +1,16 @@
+@import '../../include/index.scss';
+
+.#{$class-prefix}-select-box-item {
+    >input:checked {
+        ~label {
+            .card {
+                border-color: $primary-1 !important;
+                box-shadow: 0px 0px 10px rgba(10, 175, 255, 0.35);
+            }
+        }
+    }
+
+    ul li {
+        list-style: disc;
+    }
+}

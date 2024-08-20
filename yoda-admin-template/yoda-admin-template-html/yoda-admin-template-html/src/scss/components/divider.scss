@@ -1,0 +1,63 @@
+@import '../include/index.scss';
+
+/* Divider */
+.divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    text-align: center;
+    width: 100%;
+    margin: 24px 0;
+    color: $b-100;
+    font-size: 14px;
+    line-height: 1.5;
+    border-color: rgba(0, 0, 0, .06);
+
+    &-text {
+        padding: 0 14px;
+    }
+
+    &-vertical {
+        display: inline-block;
+        width: auto;
+        height: 0.9em;
+        margin: 0 8px;
+        vertical-align: middle;
+        border-left: 1px solid rgba(0, 0, 0, .06);
+
+        &:after,
+        &:before {
+            display: none;
+        }
+    }
+
+    &:after,
+    &:before {
+        content: "";
+        display: block;
+        width: 50%;
+        border-top: 1px solid transparent;
+        border-top-color: inherit;
+    }
+
+    &-left {
+        &:before {
+            width: 5%;
+        }
+
+        &:after {
+            width: 95%;
+        }
+    }
+
+    &-right {
+        &:before {
+            width: 95%;
+        }
+
+        &:after {
+            width: 5%;
+        }
+    }
+}

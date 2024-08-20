@@ -1,0 +1,79 @@
+@import '../../include/index.scss';
+
+/* Apex Charts */
+.apexcharts-canvas {
+    /* Tooltip Color */
+    .apexcharts-tooltip {
+        color: $b-80;
+    }
+
+    /* Toolbar Download Option Color */
+    .apexcharts-toolbar {
+        .apexcharts-menu {
+            .apexcharts-menu-item {
+                color: $b-80;
+                background-color: $primary-1;
+            }
+        }
+    }
+
+    .apexcharts-xaxistooltip-text {
+        font-family: "Manrope", sans-serif !important;
+        color: $b-80 !important;
+    }
+
+    /* Text font family */
+    .apexcharts-text,
+    .apexcharts-datalabel {
+        font-family: $font-family !important;
+    }
+
+    .apexcharts-tooltip-text {
+        font-family: $font-family !important;
+    }
+
+    .#{$class-prefix}-donut-chart .apexcharts-tooltip {
+        color: $b-0 !important;
+    }
+}
+
+.#{$class-prefix}-chart-text-color {
+    .apexcharts-text {
+        fill: $b-60 !important;
+    }
+}
+
+/* apex charts tooltip */
+.apexcharts-xaxistooltip {
+    color: $b-0 !important;
+}
+
+/* Toolbar Z-index */
+.apexcharts-toolbar {
+    z-index: 10;
+}
+
+/* Analytics Visiters Chart */
+.#{$class-prefix}-analytics-visiters-chart {
+    height: 402px;
+
+    .apexcharts-text {
+        fill: $b-60 !important;
+    }
+}
+
+#analytics-visiters-chart {
+    .apexcharts-legend.apexcharts-align-right .apexcharts-legend-series {
+        display: flex;
+    }
+}
+
+/* Heatmap Chart */
+.#{$class-prefix}-heatmap-chart {
+
+    .apexcharts-legend.position-bottom.apexcharts-align-center,
+    .apexcharts-legend.position-top.apexcharts-align-center {
+        justify-content: space-between !important;
+        padding: 0px 50px;
+    }
+}

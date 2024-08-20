@@ -1,0 +1,53 @@
+// Bootstrap
+@import './bootstrap.scss';
+
+// Colors
+@import './colors.scss';
+
+// Plugin
+@import './core/plugin/apex-charts.scss';
+@import './core/plugin/flags.scss';
+@import './core/plugin/highlight-mono-blue.scss';
+@import './core/plugin/swiper-bundle.scss';
+
+// Base
+@import './core/base/base.scss';
+@import './core/base/typography.scss';
+
+// Components
+@import './components.scss';
+
+// Layouts
+@import './core/layouts/header.scss';
+@import './core/layouts/horizontal-menu.scss';
+@import './core/layouts/sider.scss';
+@import './core/layouts/customizer.scss';
+@import './core/layouts/page-content.scss';
+
+// Pages
+@import './core/pages/app-contact-detail.scss';
+@import './core/pages/app-contact.scss';
+@import './core/pages/app-ecommerce.scss';
+@import './core/pages/authentication.scss';
+@import './core/pages/dashboard-analytics.scss';
+@import './core/pages/dashboard-ecommerce.scss';
+@import './core/pages/page-error.scss';
+@import './core/pages/page-faq.scss';
+@import './core/pages/page-invoice.scss';
+@import './core/pages/page-knowledge-base.scss';
+@import './core/pages/page-lock-screen.scss';
+@import './core/pages/page-pricing.scss';
+@import './core/pages/page-profile.scss';
+
+// Theme Dark
+@import './core/theme/colors-dark.scss';
+@import './core/theme/theme-dark.scss';
+
+// RTL
+@import './custom-rtl.scss';
+
+// Custom
+@import './custom/style.scss';
+
+// Custom RTl
+@import './custom/style-rtl.scss';

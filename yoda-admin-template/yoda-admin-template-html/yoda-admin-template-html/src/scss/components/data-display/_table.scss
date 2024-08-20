@@ -1,0 +1,66 @@
+@import '../../include/index.scss';
+
+/* Table */
+table {
+
+    td,
+    th {
+        font-weight: 500;
+    }
+}
+
+.table {
+    > :not(:first-child) {
+        border-top-width: 0;
+    }
+
+    thead {
+        th {
+            font-weight: $font-weight-medium;
+            background: $b-10;
+
+            &:first-child {
+                border-top-left-radius: $border-radius;
+            }
+
+            &:last-child {
+                border-top-right-radius: $border-radius;
+            }
+        }
+    }
+
+    tfoot {
+        td {
+            background: #fafafa;
+            border: none;
+
+            &:first-child {
+                border-bottom-left-radius: $border-radius;
+            }
+
+            &:last-child {
+                border-bottom-right-radius: $border-radius;
+            }
+        }
+    }
+
+    td {
+        font-weight: $font-weight-regular;
+    }
+
+    &-secondary {
+        color: $b-0
+    }
+
+    &-danger {
+        color: $b-0
+    }
+
+    &-dark {
+        thead {
+            th {
+                background: $dark-90;
+            }
+        }
+    }
+}
