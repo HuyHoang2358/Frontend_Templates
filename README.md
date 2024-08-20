@@ -31,3 +31,9 @@ Dưới đây là các template dành cho frontend để tiện sử dụng
 - Hỗ trợ: html thuần
 
   ![Trang chủ IceWall admin](./images/icewall-admin-template.png)
+
+### 6. Xray admin template
+- CSS: Bootstrap Css
+- Hỗ trợ: html thuần, vue
+
+  ![Trang chủ Xray admin](./images/xray-admin-template.png)
