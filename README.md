@@ -18,3 +18,10 @@ Dưới đây là các template dành cho frontend để tiện sử dụng
 - Hỗ trợ: html thuần
 
   ![Trang chủ yoda admin](./images/enigma-admin-template.png)
+
+  
+### 4. Tinker admin template
+- CSS: Tailwild Css
+- Hỗ trợ: html thuần
+
+  ![Trang chủ yoda admin](./images/tinker-admin-template.png)
