@@ -1,0 +1,174 @@
+@import './include/index.scss';
+
+$colors: ("primary-1": $primary-1,
+  "primary-2": $primary-2,
+  "primary-3": $primary-3,
+  "primary-4": $primary-4,
+  "secondary-1": $secondary-1,
+  "secondary-2": $secondary-2,
+  "secondary-3": $secondary-3,
+  "secondary-4": $secondary-4,
+  "warning-1": $warning-1,
+  "warning-2": $warning-2,
+  "warning-3": $warning-3,
+  "warning-4": $warning-4,
+  "success-1": $success-1,
+  "success-2": $success-2,
+  "success-3": $success-3,
+  "success-4": $success-4,
+  "danger-1": $danger-1,
+  "danger-2": $danger-2,
+  "danger-3": $danger-3,
+  "danger-4": $danger-4,
+  "info-1": $info-1,
+  "info-2": $info-2,
+  "info-3": $info-3,
+  "info-4": $info-4,
+  "black-0": $b-0,
+  "black-10": $b-10,
+  "black-20": $b-20,
+  "black-40": $b-40,
+  "black-60": $b-60,
+  "black-80": $b-80,
+  "black-100": $b-100,
+  "black-bg": $dark-bg,
+  "primary-gradient": $primary-gradient,
+  "secondary-gradient": $secondary-gradient,
+  "warning-gradient": $warning-gradient,
+  "dark-gradient": $dark-gradient,
+  "success-gradient": $success-gradient,
+  "danger-gradient": $danger-gradient,
+  "info-gradient": $info-gradient,
+);
+
+/* Text Color Hover Map */
+@each $color,
+$value in $colors {
+  .#{$class-prefix}-hover-text-color-#{$color} {
+    &:hover {
+      color: $value !important;
+    }
+  }
+}
+
+/* Text Color Map */
+@each $color,
+$value in $colors {
+  .#{$class-prefix}-text-color-#{$color} {
+    color: $value !important;
+  }
+}
+
+/* Background Color Hover Map */
+@each $color,
+$value in $colors {
+  .#{$class-prefix}-hover-bg-color-#{$color} {
+    &:hover {
+      background-color: $value !important;
+    }
+  }
+}
+
+/* Background Color Map */
+@each $color,
+$value in $colors {
+  .#{$class-prefix}-bg-color-#{$color} {
+    background-color: $value !important;
+  }
+}
+
+/* Background Hover Map */
+@each $color,
+$value in $colors {
+  .#{$class-prefix}-hover-bg-#{$color} {
+    &:hover {
+      background: $value !important;
+    }
+  }
+}
+
+/* Background Map */
+@each $color,
+$value in $colors {
+  .#{$class-prefix}-bg-#{$color} {
+    background: $value !important;
+  }
+}
+
+/* Border Color Hover Map */
+@each $color,
+$value in $colors {
+  .#{$class-prefix}-hover-border-color-#{$color} {
+    &:hover {
+      border-color: $value !important;
+    }
+  }
+}
+
+/* Border Color Map */
+@each $color,
+$value in $colors {
+  .#{$class-prefix}-border-color-#{$color} {
+    border-color: $value !important;
+  }
+}
+
+/* Fill Hover Map */
+@each $color,
+$value in $colors {
+  .#{$class-prefix}-hover-fill-color-#{$color} {
+    &:hover {
+
+      path,
+      rect,
+      line,
+      circle {
+        fill: $value !important;
+      }
+    }
+  }
+}
+
+/* Fill Map */
+@each $color,
+$value in $colors {
+  .#{$class-prefix}-fill-color-#{$color} {
+
+    path,
+    rect,
+    line,
+    circle {
+      fill: $value !important;
+    }
+  }
+}
+
+/* Stroke Hover Map */
+@each $color,
+$value in $colors {
+  .#{$class-prefix}-hover-stroke-color-#{$color} {
+
+    path,
+    rect,
+    line,
+    circle {
+      &:hover {
+        stroke: $value !important;
+      }
+    }
+  }
+}
+
+/* Stroke Map */
+@each $color,
+$value in $colors {
+  .#{$class-prefix}-stroke-color-#{$color} {
+
+    path,
+    rect,
+    line,
+    circle {
+      stroke: $value !important;
+    }
+  }
+}

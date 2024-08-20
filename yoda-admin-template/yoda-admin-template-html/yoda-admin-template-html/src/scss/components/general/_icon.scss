@@ -1,0 +1,16 @@
+@import '../../include/index.scss';
+
+/* Icons */
+.#{$class-prefix}-icon-search-col {
+    @include breakpoint(sm) {
+        flex: 0 0 100%;
+    }
+}
+
+.#{$class-prefix}-icon-card {
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: $input-focus;
+    }
+}

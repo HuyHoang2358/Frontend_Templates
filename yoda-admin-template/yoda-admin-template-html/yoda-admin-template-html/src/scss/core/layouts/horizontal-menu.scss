@@ -1,0 +1,161 @@
+@import "../../include/index.scss";
+
+/* Horizontal Menu */
+body.horizontal-active {
+    .#{$class-prefix}-horizontal-menu {
+        &.search-active {
+            display: none !important;
+        }
+
+        @include breakpoint(lg) {
+            display: none !important;
+        }
+    }
+}
+
+.#{$class-prefix}-horizontal-menu {
+    ul li a {
+        color: $b-80;
+    }
+
+    > ul > li {
+        > a {
+            display: flex;
+            align-items: center;
+            border-radius: 7px;
+
+            > i {
+                color: $b-60;
+                font-size: 13px;
+                margin-left: 4px;
+            }
+
+            &:hover,
+            &:focus {
+                background: $b-10;
+                color: $b-100;
+            }
+
+            &.active {
+                background: $b-10;
+                color: $b-100;
+            }
+        }
+
+        ul {
+            min-width: 200px;
+            padding: 0;
+            border: none;
+            background: none;
+            box-shadow: none;
+
+            li {
+                a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 12px 18px;
+
+                    > span {
+                        display: flex;
+                        align-items: center;
+
+                        > i {
+                            margin-right: 8px;
+                        }
+
+                        .submenu-item-icon {
+                            margin-right: 8px;
+                        }
+                    }
+
+                    .dropdown-menu-arrow {
+                        margin-left: 8px;
+                        width: 20px;
+                        height: 20px;
+                        transform: rotate(-90deg);
+                        background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none'%3E%3Cpath stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' stroke-width='1.5' d='M19.92 8.95l-6.52 6.52c-.77.77-2.03.77-2.8 0L4.08 8.95'/%3E%3C/svg%3E")
+                            transparent no-repeat 50% / contain;
+                    }
+
+                    &:hover,
+                    &:focus {
+                        background: none;
+                        color: $primary-1;
+                    }
+
+                    &.dropdown-item {
+                        &.active {
+                            background: none !important;
+                        }
+                    }
+
+                    &.active {
+                        background: $b-0;
+                        color: $primary-1;
+                    }
+                }
+            }
+        }
+    }
+
+    ul > li {
+        position: relative;
+        padding-bottom: 5px;
+        margin-bottom: -5px;
+
+        > ul > li {
+            ul {
+                transform: translate(0px, 0) !important;
+                left: 100% !important;
+                top: 0 !important;
+                margin: 0 -5px !important;
+                padding: 8px 0;
+            }
+
+            &:hover > ul,
+            > ul > li:hover > ul {
+                display: block;
+            }
+        }
+
+        ul {
+            &:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0px;
+                right: 10px;
+                bottom: 0;
+                background: $b-20;
+                border-radius: 7px;
+                box-shadow: 0 3px 6px -4px rgb(0 0 0 / 1%), 0 6px 16px 0 rgb(0 0 0 / 8%), 0 9px 28px 8px rgb(0 0 0 / 5%);
+                z-index: -1;
+            }
+
+            ul:before {
+                right: 0;
+            }
+
+            li a {
+                padding: 12px 14px 12px 10px;
+                margin: 4px 10px 4px 0;
+                width: auto;
+            }
+        }
+
+        &:hover > ul {
+            display: block;
+        }
+
+        > ul {
+            left: 12px !important;
+            transform: translate(0px, 0px) !important;
+            top: 95% !important;
+        }
+    }
+
+    @include breakpoint(lg) {
+        display: none;
+    }
+}

@@ -1,0 +1,186 @@
+@import '../../include/index.scss';
+
+/* Dark Color Variables */
+$colors: ("dark-0": $dark-0,
+  "dark-5": $dark-5,
+  "dark-10": $dark-10,
+  "dark-15": $dark-15,
+  "dark-20": $dark-20,
+  "dark-30": $dark-30,
+  "dark-35": $dark-35,
+  "dark-40": $dark-40,
+  "dark-45": $dark-45,
+  "dark-50": $dark-50,
+  "dark-60": $dark-60,
+  "dark-70": $dark-70,
+  "dark-80": $dark-80,
+  "dark-85": $dark-85,
+  "dark-90": $dark-90,
+  "dark-100": $dark-100,
+  "dark-primary": $primary-dark,
+  "dark-danger": $danger-dark,
+  "dark-error": $danger-dark,
+  "dark-warning": $warning-dark,
+  "dark-success": $success-dark,
+  "dark-secondary": $secondary-dark,
+  "dark-info": $info-dark,
+  "dark-primary-1": $primary-1,
+  "dark-primary-2": $primary-2,
+  "dark-primary-3": $primary-3,
+  "dark-primary-4": $primary-4,
+  "dark-secondary-1": $secondary-1,
+  "dark-secondary-2": $secondary-2,
+  "dark-secondary-3": $secondary-3,
+  "dark-secondary-4": $secondary-4,
+  "dark-warning-1": $warning-1,
+  "dark-warning-2": $warning-2,
+  "dark-warning-3": $warning-3,
+  "dark-warning-4": $warning-4,
+  "dark-success-1": $success-1,
+  "dark-success-2": $success-2,
+  "dark-success-3": $success-3,
+  "dark-success-4": $success-4,
+  "dark-danger-1": $danger-1,
+  "dark-danger-2": $danger-2,
+  "dark-danger-3": $danger-3,
+  "dark-danger-4": $danger-4,
+  "dark-info-1": $info-1,
+  "dark-info-2": $info-2,
+  "dark-info-3": $info-3,
+  "dark-info-4": $info-4,
+);
+
+/* Dark Text Color Hover Map */
+body.dark {
+
+  @each $color,
+  $value in $colors {
+    .#{$class-prefix}-hover-text-color-#{$color} {
+      &:hover {
+        color: $value !important;
+      }
+    }
+  }
+
+  /* Dark Text Color Map */
+  @each $color,
+  $value in $colors {
+    .#{$class-prefix}-text-color-#{$color} {
+      color: $value !important;
+    }
+  }
+
+  /* Dark Background Color Hover Map */
+  @each $color,
+  $value in $colors {
+    .#{$class-prefix}-hover-bg-color-#{$color} {
+      &:hover {
+        background-color: $value !important;
+      }
+    }
+  }
+
+  /* Dark Background Color Map */
+  @each $color,
+  $value in $colors {
+    .#{$class-prefix}-bg-color-#{$color} {
+      background-color: $value !important;
+    }
+  }
+
+  /* Dark Background Hover Map */
+  @each $color,
+  $value in $colors {
+    .#{$class-prefix}-hover-bg-#{$color} {
+      &:hover {
+        background: $value !important;
+      }
+    }
+  }
+
+  /* Dark Background Map */
+  @each $color,
+  $value in $colors {
+    .#{$class-prefix}-bg-#{$color} {
+      background: $value !important;
+    }
+  }
+
+  /* Dark Border Color Hover Map */
+  @each $color,
+  $value in $colors {
+    .#{$class-prefix}-hover-border-color-#{$color} {
+      &:hover {
+        border-color: $value !important;
+      }
+    }
+  }
+
+  /* Dark Border Color Map */
+  @each $color,
+  $value in $colors {
+    .#{$class-prefix}-border-color-#{$color} {
+      border-color: $value !important;
+    }
+  }
+
+  /* Dark Fill Hover Map */
+  @each $color,
+  $value in $colors {
+    .#{$class-prefix}-hover-fill-color-#{$color} {
+      &:hover {
+
+        path,
+        rect,
+        line,
+        circle {
+          fill: $value !important;
+        }
+      }
+    }
+  }
+
+  /* Dark Fill Map */
+  @each $color,
+  $value in $colors {
+    .#{$class-prefix}-fill-color-#{$color} {
+
+      path,
+      rect,
+      line,
+      circle {
+        fill: $value !important;
+      }
+    }
+  }
+
+  /* Dark Stroke Hover Map */
+  @each $color,
+  $value in $colors {
+    .#{$class-prefix}-hover-stroke-color-#{$color} {
+
+      path,
+      rect,
+      line,
+      circle {
+        &:hover {
+          stroke: $value !important;
+        }
+      }
+    }
+  }
+
+  /* Dark Stroke Map */
+  @each $color,
+  $value in $colors {
+    .#{$class-prefix}-stroke-color-#{$color} {
+
+      path,
+      rect,
+      line,
+      circle {
+        stroke: $value !important;
+      }
+    }
+  }
+}

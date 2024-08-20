@@ -1,0 +1,97 @@
+@import '../../include/index.scss';
+
+/* Alert */
+.alert {
+    .btn-close {
+        background: none;
+        mask-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxNCAxNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTYuOTk5OTkgNS41ODU5OUwxMS45NSAwLjYzNTk4NkwxMy4zNjQgMi4wNDk5OUw4LjQxMzk5IDYuOTk5OTlMMTMuMzY0IDExLjk1TDExLjk1IDEzLjM2NEw2Ljk5OTk5IDguNDEzOTlMMi4wNDk5OSAxMy4zNjRMMC42MzU5ODYgMTEuOTVMNS41ODU5OSA2Ljk5OTk5TDAuNjM1OTg2IDIuMDQ5OTlMMi4wNDk5OSAwLjYzNTk4Nkw2Ljk5OTk5IDUuNTg1OTlaIiBmaWxsPSIjRkZDNzAwIi8+Cjwvc3ZnPgo=");
+        mask-size: auto 16px;
+        mask-position: center;
+        mask-repeat: no-repeat;
+        background-color: $b-100;
+    }
+
+    &-primary {
+        color: $primary-1;
+        background-color: $primary-4;
+        border-color: $primary-4;
+
+        .btn-close {
+            background-color: $primary-1;
+        }
+
+        .alert-link {
+            color: $primary-1;
+        }
+    }
+
+    &-secondary {
+        color: $secondary-1;
+        background-color: $secondary-4;
+        border-color: $secondary-4;
+
+        .btn-close {
+            background-color: $secondary-1;
+        }
+
+        .alert-link {
+            color: $secondary-1;
+        }
+    }
+
+    &-success {
+        color: $success-1;
+        background-color: $success-4;
+        border-color: $success-4;
+
+        .btn-close {
+            background-color: $success-1;
+        }
+
+        .alert-link {
+            color: $success-1;
+        }
+    }
+
+    &-info {
+        color: $info-1;
+        background-color: $info-4;
+        border-color: $info-4;
+
+        .btn-close {
+            background-color: $info-1;
+        }
+
+        .alert-link {
+            color: $info-1;
+        }
+    }
+
+    &-warning {
+        color: $warning-1;
+        background-color: $warning-4;
+        border-color: $warning-4;
+
+        .btn-close {
+            background-color: $warning-1;
+        }
+
+        .alert-link {
+            color: $warning-1;
+        }
+    }
+
+    &-danger {
+        color: $danger-1;
+        background-color: $danger-4;
+        border-color: $danger-4;
+
+        .btn-close {
+            background-color: $danger-1;
+        }
+
+        .alert-link {
+            color: $danger-1;
+        }
+    }
+}

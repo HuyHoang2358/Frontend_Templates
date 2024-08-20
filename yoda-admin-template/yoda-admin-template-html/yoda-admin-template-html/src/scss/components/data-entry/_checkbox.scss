@@ -1,0 +1,17 @@
+@import '../../include/index.scss';
+
+/* Checkbox */
+.form-check-input {
+    width: 1.15em;
+    height: 1.14em;
+    margin-top: 3px;
+
+    &:disabled {
+        background-color: $b-20;
+        border-color: $b-60;
+
+        ~label {
+            color: $b-60;
+        }
+    }
+}

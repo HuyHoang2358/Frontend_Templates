@@ -1,0 +1,14 @@
+@import '../../include/index.scss';
+
+/* Page Content */
+.#{$class-prefix}-page-content {
+    .breadcrumb-item.breadcrumb-link {
+        a {
+            color: $b-0;
+
+            &:hover {
+                color: $primary-2;
+            }
+        }
+    }
+}

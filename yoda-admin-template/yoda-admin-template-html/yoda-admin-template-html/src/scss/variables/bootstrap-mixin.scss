@@ -1,0 +1,153 @@
+// Buttons
+@mixin button-variant($background,
+    $border,
+    $color: color-contrast($background),
+    $hover-background: if($color==$color-contrast-light, shade-color($background, $btn-hover-bg-shade-amount), tint-color($background, $btn-hover-bg-tint-amount)),
+    $hover-border: if($color==$color-contrast-light, shade-color($border, $btn-hover-border-shade-amount), tint-color($border, $btn-hover-border-tint-amount)),
+    $hover-color: color-contrast($hover-background),
+    $active-background: if($color==$color-contrast-light, shade-color($background, $btn-active-bg-shade-amount), tint-color($background, $btn-active-bg-tint-amount)),
+    $active-border: if($color==$color-contrast-light, shade-color($border, $btn-active-border-shade-amount), tint-color($border, $btn-active-border-tint-amount)),
+    $active-color: color-contrast($active-background),
+    $disabled-background: $background,
+    $disabled-border: $border,
+    $disabled-color: color-contrast($disabled-background)) {
+    color: $color !important;
+    @include gradient-bg($background !important);
+    border-color: $border !important;
+    @include box-shadow($btn-box-shadow);
+
+    &:hover {
+        color: $b-0 !important;
+        @include gradient-bg($hover-background);
+        border-color: $hover-border;
+    }
+
+    .btn-check:focus+&,
+    &:focus {
+        color: $hover-color;
+        @include gradient-bg($hover-background);
+        border-color: $hover-border;
+
+        @if $enable-shadows {
+            @include box-shadow($btn-box-shadow, 0 0 0 $btn-focus-width rgba(mix($color, $border, 15%), .5));
+        }
+
+        @else {
+            // Avoid using mixin so we can pass custom focus shadow properly
+            box-shadow: 0 0 0 $btn-focus-width rgba(mix($color, $border, 15%), .5);
+        }
+    }
+
+    .btn-check:checked+&,
+    .btn-check:active+&,
+    &:active,
+    &.active,
+    .show>&.dropdown-toggle {
+        color: $active-color;
+        background-color: $active-background;
+        // Remove CSS gradients if they're enabled
+        background-image: if($enable-gradients, none, null);
+        border-color: $active-border;
+
+        &:focus {
+            @if $enable-shadows {
+                @include box-shadow($btn-active-box-shadow, 0 0 0 $btn-focus-width rgba(mix($color, $border, 15%), .5));
+            }
+
+            @else {
+                // Avoid using mixin so we can pass custom focus shadow properly
+                box-shadow: 0 0 0 $btn-focus-width rgba(mix($color, $border, 15%), .5);
+            }
+        }
+    }
+}
+
+@each $color,
+$value in $theme-colors {
+    .btn-#{$color} {
+        @include button-variant($value, $value);
+    }
+}
+
+@mixin button-outline-variant($color,
+    $color-hover: color-contrast($color),
+    $active-background: $color,
+    $active-border: $color,
+    $active-color: color-contrast($active-background)) {
+    color: $color !important;
+    border-color: $color !important;
+
+    &:hover {
+        color: $b-0 !important;
+        background-color: $active-background !important;
+        border-color: $active-border;
+    }
+
+    .btn-check:focus+&,
+    &:focus {
+        box-shadow: 0 0 0 $btn-focus-width rgba($color, .5);
+    }
+
+    .btn-check:checked+&,
+    .btn-check:active+&,
+    &:active,
+    &.active,
+    &.dropdown-toggle.show {
+        color: $active-color;
+        background-color: $active-background !important;
+        border-color: $active-border;
+
+        &:focus {
+            @if $enable-shadows {
+                @include box-shadow($btn-active-box-shadow, 0 0 0 $btn-focus-width rgba($color, .5));
+            }
+
+            @else {
+                // Avoid using mixin so we can pass custom focus shadow properly
+                box-shadow: 0 0 0 $btn-focus-width rgba($color, .5);
+            }
+        }
+    }
+}
+
+@each $color,
+$value in $theme-colors {
+    .btn-outline-#{$color} {
+        @include button-outline-variant($value);
+    }
+}
+
+// List Groups
+@mixin list-group-item-variant($state, $background, $color) {
+    .list-group-item-#{$state} {
+        color: $color !important;
+        background-color: $background !important;
+
+        &.list-group-item-action {
+
+            &:hover,
+            &:focus {
+                color: $color !important;
+                background-color: shade-color($background, 10%) !important;
+            }
+
+            &.active {
+                color: $white !important;
+                background-color: $color !important;
+                border-color: $color !important;
+            }
+        }
+    }
+}
+
+@each $state,
+$value in $theme-colors {
+    $list-group-variant-bg: shift-color($value, $list-group-item-bg-scale);
+    $list-group-variant-color: shift-color($value, $list-group-item-color-scale);
+
+    @if (contrast-ratio($list-group-variant-bg, $list-group-variant-color) < $min-contrast-ratio) {
+        $list-group-variant-color: mix($value, color-contrast($list-group-variant-bg), abs($list-group-item-color-scale));
+    }
+
+    @include list-group-item-variant($state, $list-group-variant-bg, $list-group-variant-color);
+}

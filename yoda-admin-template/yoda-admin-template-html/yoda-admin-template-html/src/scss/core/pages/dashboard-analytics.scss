@@ -1,0 +1,42 @@
+@import "../../include/index.scss";
+
+/* Dashboard analytics */
+.#{$class-prefix}-analytics-col-2 {
+    flex: 0 0 360px;
+
+    @include breakpoint(lg) {
+        flex: 0 0 100%;
+    }
+}
+
+.#{$class-prefix}-dashboard-line {
+    display: none;
+}
+
+body.content-width-boxed {
+    .#{$class-prefix}-dashboard-line {
+        display: block;
+    }
+
+    @include breakpoint(lg) {
+        .#{$class-prefix}-dashboard-line {
+            display: none;
+        }
+    }
+}
+
+.#{$class-prefix}-dashboard-feature-card {
+    .#{$class-prefix}-dashboard-feature-card-icon {
+        svg {
+            transition: 0.4s;
+        }
+    }
+
+    &:hover {
+        .#{$class-prefix}-dashboard-feature-card-icon {
+            svg {
+                transform: scale(1.2);
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+@import '../../include/index.scss';
+
+/* Invoice */
+.#{$class-prefix}-invoice-table-desc {
+    @include breakpoint(sm) {
+        min-width: 300px;
+    }
+}
+
+.#{$class-prefix}-invoice-table-th {
+    @include breakpoint(sm) {
+        min-width: 70px;
+    }
+}
+
+.#{$class-prefix}-invoice-card {
+    p {
+        margin: 0;
+        color: $b-80;
+        line-height: 21px;
+    }
+}
+
+@media print {
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    .#{$class-prefix}-sidebar,
+    header,
+    footer,
+    .#{$class-prefix}-print-none,
+    .#{$class-prefix}-exchange-card {
+        display: none;
+    }
+
+    .#{$class-prefix}-invoice-card {
+        border-width: 1px !important;
+    }
+}

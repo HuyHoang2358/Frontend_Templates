@@ -1,0 +1,8 @@
+@import '../../include/index.scss';
+
+/* Knowledge Base */
+.#{$class-prefix}-knowledge-basic-card {
+    min-height: 200px;
+    align-content: space-between;
+    display: block;
+}

@@ -1,0 +1,48 @@
+@import '../../include/index.scss';
+
+/* FAQ */
+.#{$class-prefix}-collapse-arrow {
+    display: inline-block;
+    transform: rotate(90deg);
+    transition: 0.4s;
+}
+
+.collapsed {
+    .#{$class-prefix}-collapse-arrow {
+        transform: rotate(0deg);
+    }
+}
+
+.#{$class-prefix}-faq-tabs {
+    @include breakpoint(sm) {
+        .nav-item {
+            min-width: 190px;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .nav-link {
+        i {
+            transition: 0.15s ease-in-out;
+        }
+
+        &.active {
+            i {
+                color: $b-0 !important;
+            }
+
+            &:hover {
+                i {
+                    color: $b-0 !important;
+                }
+            }
+        }
+
+        &:hover {
+            i {
+                color: $primary-2 !important;
+            }
+        }
+    }
+}

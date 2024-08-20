@@ -1,0 +1,19 @@
+@import '../../include/index.scss';
+
+/* Pagination */
+.pagination {
+    margin: 0 -16px;
+
+    .page-link {
+        min-width: 40px;
+        border-radius: $border-radius !important;
+        margin: 0 16px;
+        text-align: center;
+    }
+
+    &.pagination-sm {
+        .page-link {
+            min-width: 32px;
+        }
+    }
+}

@@ -1,0 +1,389 @@
+// Theme Colors
+$primary: $primary-1;
+$secondary: $secondary-1;
+$success: $success-1;
+$info: $info-1;
+$warning: $warning-1;
+$danger: $danger-1;
+$light: $b-10;
+$dark: $dark-bg;
+
+$theme-colors: ("primary": $primary-1,
+    "primary-1": $primary-1,
+    "primary-2": $primary-2,
+    "primary-3": $primary-3,
+    "primary-4": $primary-4,
+    "secondary": $secondary-1,
+    "secondary-1": $secondary-1,
+    "secondary-2": $secondary-2,
+    "secondary-3": $secondary-3,
+    "secondary-4": $secondary-4,
+    "warning": $warning-1,
+    "warning-1": $warning-1,
+    "warning-2": $warning-2,
+    "warning-3": $warning-3,
+    "warning-4": $warning-4,
+    "success": $success-1,
+    "success-1": $success-1,
+    "success-2": $success-2,
+    "success-3": $success-3,
+    "success-4": $success-4,
+    "danger": $danger-1,
+    "danger-1": $danger-1,
+    "danger-2": $danger-2,
+    "danger-3": $danger-3,
+    "danger-4": $danger-4,
+    "info": $info-1,
+    "info-1": $info-1,
+    "info-2": $info-2,
+    "info-3": $info-3,
+    "info-4": $info-4,
+    "black-0": $b-0,
+    "black-10": $b-10,
+    "black-20": $b-20,
+    "black-40": $b-40,
+    "black-60": $b-60,
+    "black-80": $b-80,
+    "black-bg": $dark-bg,
+    "black-100": $b-100,
+    "light": $light,
+    "dark": $dark);
+
+// Grid
+$grid-breakpoints: (xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px,
+    xxxl: 1600px);
+
+// Headings
+$headings-margin-bottom: 14px;
+
+// Close Button
+$btn-close-focus-shadow: none;
+
+// Link
+$link-color: $primary-1;
+$link-hover-color: $primary-2;
+$link-decoration: none;
+
+// Line Height
+$line-height-base: 1.5;
+$line-height-sm: 1.25;
+$line-height-lg: 2;
+
+// Font Size
+$h1-font-size: $h1-font-size;
+$h2-font-size: $h2-font-size;
+$h3-font-size: $h3-font-size;
+$h4-font-size: $h4-font-size;
+$h5-font-size: $h5-font-size;
+
+// Font Weight
+$font-weight-lighter: $font-weight-extraLight;
+$font-weight-light: $font-weight-light;
+$font-weight-normal: $font-weight-regular;
+$font-weight-bold: $font-weight-bold;
+$font-weight-bolder: $font-weight-extraBold;
+
+// Spacing
+$spacers: (0:0px,
+    4:4px,
+    6:6px,
+    8:8px,
+    10:10px,
+    12:12px,
+    16:16px,
+    18:18px,
+    24:24px,
+    32:32px,
+    36:36px,
+    42:42px,
+    48:48px,
+    64:64px,
+    80:80px,
+    96:96px,
+    120:120px);
+
+$enable-negative-margins: true;
+
+// Gutter
+$gutters: (0:0px,
+    4:4px,
+    6:6px,
+    8:8px,
+    10:10px,
+    12:12px,
+    16:16px,
+    18:18px,
+    24:24px,
+    32:32px,
+    36:36px,
+    42:42px,
+    48:48px,
+    64:64px,
+    80:80px,
+    96:96px,
+    120:120px);
+
+// Border
+$border-widths: (1: 1px,
+    2: 2px,
+    3: 3px,
+    none: 0,
+);
+
+$border-color: $b-40;
+
+// Border Radius
+$border-radius: $border-radius-base;
+$border-radius-sm: $border-radius-sm;
+$border-radius-lg: $border-radius-lg;
+$border-radius-xl: $border-radius-xl;
+$border-radius-pill: 50rem;
+
+// Popover
+$popover-border-width: 0;
+$popover-border-radius: $border-radius;
+$popover-body-color: $b-80;
+$popover-header-bg: $b-0;
+$popover-arrow-outer-color: $b-0;
+
+// Table
+$table-color: $b-100;
+$table-cell-padding-y: 16px;
+$table-cell-padding-x: 16px;
+$table-border-width: 0.5px;
+$table-border-color: $b-40;
+$table-striped-bg-factor: 1;
+$table-striped-bg: #fafafa94;
+$table-hover-bg-factor: 1;
+$table-hover-bg: #fafafa;
+$table-active-bg-factor: 1;
+$table-active-bg: #f1f1f1;
+
+$table-variants: ("primary": $primary-2,
+    "secondary": $secondary-2,
+    "success": $success-2,
+    "info": $info-2,
+    "warning": $warning-2,
+    "danger": $danger-2,
+    "light": $light,
+    "dark": $dark-100,
+);
+
+// Checkbox
+$form-check-input-border: 2px solid $b-60;
+$form-check-input-disabled-opacity: 1;
+$form-check-margin-bottom: 0;
+
+// Tooltip
+$tooltip-font-size: $p1-body;
+$tooltip-color: $primary-1;
+$tooltip-bg: $primary-4;
+$tooltip-opacity: 1;
+
+$tooltip-arrow-color: $primary-4;
+
+// Offcanvas (Drawer)
+$offcanvas-border-width: 0;
+$offcanvas-backdrop-bg: $b-100;
+$offcanvas-backdrop-opacity: 0.4;
+$offcanvas-padding-y: 16px;
+$offcanvas-padding-x: 24px;
+
+// Modal
+$modal-backdrop-bg: $b-100;
+$modal-backdrop-opacity: 0.4;
+$modal-content-border-width: 0;
+$modal-content-border-radius: $border-radius;
+$modal-inner-padding: 1.5rem;
+
+// Notification (Toast)
+$toast-border-width: 0;
+
+// Progress
+$progress-font-size: $caption;
+$progress-bg: $b-40;
+$progress-box-shadow: none;
+$progress-bar-bg: $primary;
+$progress-border-radius: $border-radius-pill;
+
+// Breadcrumb
+$breadcrumb-font-size: $p1-body;
+$breadcrumb-margin-bottom: 0;
+$breadcrumb-divider-color: $b-60;
+$breadcrumb-active-color: $b-80;
+
+// Card
+$card-spacer-y: 24px;
+$card-spacer-x: 24px;
+$card-border-radius: 24px;
+$card-border-color: $b-40;
+
+// List Groups
+$list-group-item-padding-x: 24px;
+
+// Input
+$input-padding-y: 0px;
+$input-padding-x: 15px;
+$input-line-height: 2.715;
+$input-font-size: 14px;
+$input-color: $b-100;
+$input-border-color: $b-60;
+$input-focus-border-color: $primary;
+$input-btn-focus-color: $primary-4;
+$input-disabled-bg: $b-20;
+$input-placeholder-color: $b-60;
+$input-focus-box-shadow: none;
+
+$input-padding-y-sm: 4px;
+$input-padding-x-sm: 15px;
+$input-border-radius-sm: 7px;
+
+$input-padding-y-lg: 0.1rem;
+$input-font-size-lg: 16px;
+$input-border-radius-lg: $border-radius;
+
+$input-group-addon-bg: $b-20;
+$input-group-addon-padding-y: 0px;
+
+// Tabs
+$nav-link-color: $b-100;
+$nav-link-hover-color: $primary-2;
+
+// Select
+$form-select-disabled-color: $b-60;
+$form-select-disabled-bg: $b-20;
+$form-select-bg-size: 24px;
+$form-select-indicator: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z' fill='rgba(178,190,195,1)'/%3E%3C/svg%3E");
+
+// Slider
+$form-range-track-bg: $b-40;
+$form-range-thumb-disabled-bg: $b-60;
+$form-range-thumb-width: 13px;
+$form-range-track-height: 4px;
+$form-range-thumb-active-bg: $primary-2;
+
+// Dropdown
+$dropdown-min-width: inherit;
+$dropdown-font-size: 14px;
+$dropdown-border-color: $b-40;
+$dropdown-padding-y: 8px;
+$dropdown-padding-x: 6px;
+$dropdown-link-hover-bg: $primary-4;
+$dropdown-link-active-color: $b-100;
+$dropdown-link-active-bg: $primary-4;
+$dropdown-item-padding-y: 12px;
+$dropdown-item-padding-x: 16px;
+$dropdown-link-disabled-color: $b-60;
+
+// Pagination
+$pagination-padding-y: 8px;
+$pagination-padding-x: 15.13px;
+$pagination-padding-y-sm: 4px;
+$pagination-padding-x-sm: 0;
+
+$pagination-color: $b-100;
+$pagination-border-color: $b-60;
+
+$pagination-hover-color: $primary;
+$pagination-hover-bg: $b-0;
+$pagination-hover-border-color: $primary;
+
+$pagination-focus-color: $primary;
+$pagination-focus-bg: $b-0;
+$pagination-focus-box-shadow: none;
+
+$pagination-active-color: $primary;
+$pagination-active-bg: $b-0;
+$pagination-active-border-color: $primary;
+
+$pagination-disabled-color: $b-60;
+$pagination-disabled-bg: $b-20;
+$pagination-disabled-border-color: $b-60;
+
+// Button
+$btn-box-shadow: none;
+$btn-focus-box-shadow: none;
+$btn-active-box-shadow: none;
+$btn-font-size: $button;
+$btn-line-height: 1;
+$btn-padding-x: 24px;
+$btn-disabled-opacity: 1;
+
+$btn-padding-y-sm: 4px;
+$btn-padding-x-sm: 8px;
+$btn-font-size-sm: 14px;
+
+$btn-padding-y-lg: 10.4px;
+$btn-padding-x-lg: 24px;
+$btn-font-size-lg: 16px;
+
+$btn-border-radius: $border-radius;
+$btn-border-radius-sm: $border-radius;
+$btn-border-radius-lg: $border-radius;
+
+$btn-transition: all .3s cubic-bezier(.645, .045, .355, 1);
+
+// Badge
+$badge-font-weight: 400;
+$badge-padding-y: 4px;
+$badge-padding-x: 16px;
+$badge-font-size: 12px;
+$badge-color: $b-80;
+
+// Menu
+$navbar-light-active-color: $primary;
+$navbar-light-color: $b-80;
+$navbar-light-hover-color: $primary;
+$navbar-light-disabled-color: $b-60;
+
+$navbar-toggler-padding-x: 7px;
+$navbar-toggler-focus-width: 0;
+
+// Accordion
+$accordion-border-color: $b-60;
+$accordion-button-padding-x: 36px;
+$accordion-button-padding-y: 36px;
+$accordion-body-padding-y: 16px;
+$accordion-body-padding-x: 36px;
+$accordion-button-active-bg: $b-0;
+$accordion-button-active-color: inherit;
+$accordion-button-focus-box-shadow: inset 0 (1 * -1) 0 $accordion-border-color;
+$accordion-icon-color: $b-60;
+$accordion-icon-transform: rotate(90deg);
+$accordion-button-icon: url("data:image/svg+xml,<svg fill='#{$accordion-icon-color}' stroke-width='0' viewBox='0 0 24 24' height='24' width='24' xmlns='http://www.w3.org/2000/svg'><g><path fill='none' d='M0 0h24v24H0z'></path><path d='M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z'></path></g></svg>");
+$accordion-button-active-icon: url("data:image/svg+xml,<svg fill='#{$accordion-icon-color}' stroke-width='0' viewBox='0 0 24 24' height='24' width='24' xmlns='http://www.w3.org/2000/svg'><g><path fill='none' d='M0 0h24v24H0z'></path><path d='M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z'></path></g></svg>");
+
+// Utilities
+$utilities: ("line-height": (property: line-height,
+        class: lh,
+        values: (normal: normal,
+            1: 1,
+            sm: $line-height-sm,
+            base: $line-height-base,
+            lg: $line-height-lg,
+        )),
+    "font-weight": (property: font-weight,
+        class: fw,
+        values: (light: $font-weight-light,
+            lighter: $font-weight-lighter,
+            normal: $font-weight-normal,
+            medium: $font-weight-medium,
+            semibold: $font-weight-semibold,
+            bold: $font-weight-bold,
+            bolder: $font-weight-bolder)),
+    "rounded": (property: border-radius,
+        class: rounded,
+        values: (null: $border-radius,
+            0: 0,
+            1: $border-radius-sm,
+            2: $border-radius,
+            3: $border-radius-lg,
+            4: $border-radius-xl,
+            5: $border-radius-xxl,
+            circle: 50%,
+            pill: $border-radius-pill)));

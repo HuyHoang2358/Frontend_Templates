@@ -1,0 +1,14 @@
+@import '../../include/index.scss';
+
+/* Breadcrumb */
+.breadcrumb {
+    .breadcrumb-item {
+        a {
+            color: $primary-1;
+
+            &:hover {
+                color: $primary-2;
+            }
+        }
+    }
+}

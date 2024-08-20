@@ -1,0 +1,49 @@
+@import '../include/index.scss';
+
+/* Timeline */
+.timeline {
+    color: $b-100;
+    font-size: 14px;
+    line-height: 1.5715;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    &-item {
+        position: relative;
+        margin: 0;
+        padding-bottom: 20px;
+        font-size: 14px;
+        list-style: none;
+
+        &:last-child {
+            .timeline-item-tail {
+                display: none;
+            }
+        }
+
+        &-tail {
+            position: absolute;
+            top: 10px;
+            left: 4px;
+            height: calc(100% - 10px);
+            border-left: 2px solid $dark-10;
+        }
+
+        &-head {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: $b-0;
+            border: 2px solid $primary-1;
+            border-radius: 100px;
+        }
+
+        &-content {
+            position: relative;
+            top: -7.001px;
+            margin: 0 0 0 26px;
+            word-break: break-word;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+$xs: 575px;
+$sm: 767px;
+$md: 991px;
+$lg: 1199px;
+$xl: 1599px;
+
+$breakpoints: (xs: $xs, sm: $sm, md: $md, lg: $lg, xl: $xl);
+
+@mixin breakpoint($breakpoint) {
+    @if map-has-key($breakpoints, $breakpoint) {
+        $breakpoint-value: map-get($breakpoints, $breakpoint);
+
+        @media screen and (max-width: ($breakpoint-value)) {
+            @content;
+        }
+    }
+}
