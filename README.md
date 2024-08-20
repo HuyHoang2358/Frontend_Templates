@@ -11,17 +11,23 @@ Dưới đây là các template dành cho frontend để tiện sử dụng
 - CSS: Tailwild Css
 - Hỗ trợ: html thuần
 
-  ![Trang chủ yoda admin](./images/rubick-admin-template.png)
+  ![Trang chủ Rubick admin](./images/rubick-admin-template.png)
 
 ### 3. Enigma admin template
 - CSS: Tailwild Css
 - Hỗ trợ: html thuần
 
-  ![Trang chủ yoda admin](./images/enigma-admin-template.png)
+  ![Trang chủ Enigma admin](./images/enigma-admin-template.png)
 
   
 ### 4. Tinker admin template
 - CSS: Tailwild Css
 - Hỗ trợ: html thuần
 
-  ![Trang chủ yoda admin](./images/tinker-admin-template.png)
+  ![Trang chủ Tinker admin](./images/tinker-admin-template.png)
+
+### 5. IceWall admin template
+- CSS: Tailwild Css
+- Hỗ trợ: html thuần
+
+  ![Trang chủ IceWall admin](./images/icewall-admin-template.png)
